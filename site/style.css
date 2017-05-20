@@ -11,3 +11,33 @@ a {
 	outline: none;
 	text-decoration: none;
 }
+
+nav.toggleable {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	width: 160px;
+	border-style: solid;
+}
+
+nav.toggleable #nav_options {
+	/* */
+	visibility: hidden;
+	display: none;
+	z-index: -9001;
+}
+
+nav .nav_static a {
+	display: block;
+	float: right;
+	height: 40px;
+}
+
+#chat a {
+	width: 120px;
+}
+
+#hamburger a {
+	background: #46C;
+	width: 40px;
+}
