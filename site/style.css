@@ -3,6 +3,10 @@
 	padding: 0;
 }
 
+fieldset {
+	border: none;
+}
+
 ol, ul {
 	list-style: none;
 }
@@ -40,4 +44,43 @@ nav .nav_static a {
 #hamburger a {
 	background: #46C;
 	width: 40px;
+}
+
+#container {
+	width: 80%;
+	margin: 4% auto 0 auto;
+}
+
+#container .single_column {
+	width: 100%;	
+}
+
+#container .single_column h2 {
+	margin: 0 0 6px 0;
+}
+
+#container .single_column p {
+	margin: 0 0 14px 0;
+}
+
+#container .single_column fieldset {
+	margin: 0 0 0 40px;
+}
+
+.inset {
+	float: right;
+}
+
+img.inset {
+	max-width: 300px;
+	height: auto;
+}
+
+div.form_group {
+	margin: 12px 10% 20px 0;
+}
+
+div.form_group select {
+	float: right;
+	margin: 0 60px 0 0;
 }
