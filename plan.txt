@@ -1,0 +1,20 @@
+Task one, Design Documentation:
+
+	Walkthrough; 	15 marks - Do this last
+	Colour Scheme;	13 marks - Needs basic html to really experiment with
+		- choose basic scheme
+		- experiment with html
+		- write rationale
+	Border Scheme;	16 marks - Ditto
+		- experiment with html
+		- write rationale
+	Font Scheme;	8  marks - ...
+		- compare two or more schemes with html prototype
+		- write rationale
+
+
+Task two, Implementation Tasks:
+	- create navigation bar
+	- create landing page for PLBA
+	- diverge and work on task one
+	- regroup and finish prototype functionality.
