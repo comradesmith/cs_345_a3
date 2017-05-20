@@ -15,6 +15,22 @@
 
 <body>
 	<nav>
+		<ul>
+			<li><a onclick="toggle_feedback(this)">Open Feedback</a></li>
+			<li><a onclick="submit_assignment()">Submit</a></li>
+		</ul>
+
+		<ul id="nav_assignment_edit">
+			<li><a onclick="undo()">Undo</a></li>
+			<li><a onclick="redo()">Redo</a></li>
+		</ul>
+		
+		<ul id="nav_assignment">
+			<li><a onclick="toggle_section('resources')">View Resources</a></li>
+			<li><a onclick="toggle_section('assigment_edit')">Edit Assignment</a></li>
+			<li><a onclick="toggle_section('feedback')">View Feedback</a></li>
+		</ul>
+
 		<ul id="nav_global">
 			<li><a onclick="toggle_section('home')">Home</a></li>
 			<li><a onclick="go_back()">Back</a></li>
