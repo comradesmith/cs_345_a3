@@ -5,7 +5,8 @@
 	<meta charset="utf-8">
 
 	<link href="style.css" rel="stylesheet">
-	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="script.js"></script>
 
 	<title></title> <!-- TODO -->
@@ -14,28 +15,38 @@
 </head>
 
 <body>
-	<nav>
-		<ul id="nav_assignment_control">
-			<li><a onclick="toggle_feedback(this)">Open Feedback</a></li>
-			<li><a onclick="submit_assignment()">Submit</a></li>
-		</ul>
+	<nav class="toggleable">
 
-		<ul id="nav_assignment_edit">
-			<li><a onclick="undo()">Undo</a></li>
-			<li><a onclick="redo()">Redo</a></li>
-		</ul>
+		<div id="nav_options">
+			<ul id="nav_assignment_control">
+				<li><a onclick="toggle_feedback(this)">Open Feedback</a></li>
+				<li><a onclick="submit_assignment()">Submit</a></li>
+			</ul>
+	
+			<ul id="nav_assignment_edit">
+				<li><a onclick="undo()">Undo</a></li>
+				<li><a onclick="redo()">Redo</a></li>
+			</ul>
+			
+			<ul id="nav_assignment">
+				<li><a onclick="toggle_section('resources')">View Resources</a></li>
+				<li><a onclick="toggle_section('assigment_edit')">Edit Assignment</a></li>
+				<li><a onclick="toggle_section('feedback')">View Feedback</a></li>
+			</ul>
+	
+			<ul id="nav_global">
+				<li><a onclick="toggle_section('home')">Home</a></li>
+				<li><a onclick="go_back()">Back</a></li>
+				<li><a onclick="toggle_notifications(this)">Mute Notifications</a></li>
+			</ul>
+		</div>
 		
-		<ul id="nav_assignment">
-			<li><a onclick="toggle_section('resources')">View Resources</a></li>
-			<li><a onclick="toggle_section('assigment_edit')">Edit Assignment</a></li>
-			<li><a onclick="toggle_section('feedback')">View Feedback</a></li>
-		</ul>
-
-		<ul id="nav_global">
-			<li><a onclick="toggle_section('home')">Home</a></li>
-			<li><a onclick="go_back()">Back</a></li>
-			<li><a onclick="toggle_notifications(this)">Mute Notifications</a></li>
-		</ul>
+		<div class="nav_static" id="hamburger">
+			<a onclick="toggle_menu(this)"></a>
+		</div>
+		<div class="nav_static" id="chat">
+			<a onclick="toggle_chat(this)">Chat</a>
+		</div>
 	</nav>
 
 </body>
