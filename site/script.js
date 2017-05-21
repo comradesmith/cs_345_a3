@@ -25,6 +25,7 @@ function toggle_menu(hamburger) {
 
 function toggle_section(incoming_section) {
 	var outgoing_section = $("section#" + active_section);
+	active_section = incoming_section;
 	var incoming_section = $("section#" + incoming_section);
 
 	outgoing_section.css({
