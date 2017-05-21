@@ -64,7 +64,7 @@ nav .nav_static a {
 }
 
 #container .single_column fieldset {
-	margin: 0 0 0 40px;
+	margin: 0 0 16px 40px;
 }
 
 .inset {
@@ -83,4 +83,8 @@ div.form_group {
 div.form_group select {
 	float: right;
 	margin: 0 60px 0 0;
+}
+
+div.form_group select option {
+	width: 240px;
 }
