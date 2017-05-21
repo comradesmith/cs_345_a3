@@ -88,3 +88,9 @@ div.form_group select {
 div.form_group select option {
 	width: 240px;
 }
+
+#feedback {
+	visibility: hidden;
+	display: none;
+	z-index: -9001;
+}	

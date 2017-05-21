@@ -1,4 +1,5 @@
 var menu_open = false;
+var active_section = "assignment_body";
 
 function toggle_menu(hamburger) {
 	/* TODO change colours */
@@ -21,3 +22,21 @@ function toggle_menu(hamburger) {
 		});
 	}
 } 
+
+function toggle_section(incoming_section) {
+	var outgoing_section = $("section#" + active_section);
+	var incoming_section = $("section#" + incoming_section);
+
+	outgoing_section.css({
+			"visibility" : "hidden",
+			"display" : "none",
+			"z-index" : "-9001"
+	});
+	
+	incoming_section.css({
+			"visibility" : "visible",
+			"display" : "block",
+			"z-index" : "1"
+	});
+
+}
