@@ -94,3 +94,32 @@ div.form_group select option {
 	display: none;
 	z-index: -9001;
 }	
+
+div.thread {
+	padding: 0 80px 0 0;
+	margin: 0 0 30px 0;
+}
+
+.comment {
+	border-style: solid;
+	float: right;
+}
+
+.comment.top_level {
+}
+
+.reply_container {
+	width: 600px;
+	float: right;
+}
+
+.comment.reply {
+	width: 600px;
+}
+
+.comment.reply_button {
+	/* position: absolute; */
+	/* bottom: 0px; */
+	/* right: 10px; */
+	/* height:20px; */
+}
