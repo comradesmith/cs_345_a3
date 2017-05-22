@@ -14,7 +14,14 @@ Task one, Design Documentation:
 
 
 Task two, Implementation Tasks:
-	- create navigation bar
-	- create landing page for PLBA
+	X create navigation bar
+	X create landing page for PLBA
+	X create feedback page
+	- create blank home page
+	- create resources page
+	- implement back functionality
+	- style navigation menu
+	- implement naviagtion menu colour indicators
+	- rename 'open feedback'
 	- diverge and work on task one
 	- regroup and finish prototype functionality.
