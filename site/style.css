@@ -48,6 +48,7 @@ nav .nav_static a {
 
 #container {
 	width: 80%;
+	max-width: 1200px;
 	margin: 4% auto 0 auto;
 }
 
@@ -69,6 +70,13 @@ nav .nav_static a {
 
 .inset {
 	float: right;
+	margin: 0 16px 16px 16px;
+	text-align: center;
+}
+
+.left_inset {
+	margin: 16px;
+	float: left;
 }
 
 img.inset {
@@ -122,4 +130,9 @@ div.thread {
 	/* bottom: 0px; */
 	/* right: 10px; */
 	/* height:20px; */
+}
+
+ul.bulleted_list {
+	margin: 0 0 0 24px;
+	list-style-type: square;
 }
