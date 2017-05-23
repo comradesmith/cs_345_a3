@@ -17,11 +17,16 @@ Task two, Implementation Tasks:
 	X create navigation bar
 	X create landing page for PLBA
 	X create feedback page
-	- create blank home page
-	- create resources page
+	X create blank home page
+	X create resources page
 	- implement back functionality
 	- style navigation menu
 	- implement naviagtion menu colour indicators
 	- rename 'open feedback'
 	- diverge and work on task one
 	- regroup and finish prototype functionality.
+
+### Ideas
+
+Make the title of each section behave much like a status bar, bg color,
+full width, fixed position.
