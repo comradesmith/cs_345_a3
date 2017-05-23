@@ -89,7 +89,7 @@ div.form_group select option {
 	width: 240px;
 }
 
-#feedback {
+.hidden_section {
 	visibility: hidden;
 	display: none;
 	z-index: -9001;
