@@ -18,6 +18,13 @@
 <body>
 	<nav class="toggleable">
 
+		<div class="nav_static" id="hamburger">
+			<a onclick="toggle_menu(this)"></a>
+		</div>
+		<div class="nav_static" id="chat">
+			<a onclick="toggle_chat(this)">Chat</a>
+		</div>
+
 		<div id="nav_options">
 			<ul id="nav_assignment_control">
 				<li><a onclick="toggle_feedback(this)">Open Feedback</a></li>
@@ -41,13 +48,7 @@
 				<li><a onclick="toggle_notifications(this)">Mute Notifications</a></li>
 			</ul>
 		</div>
-		
-		<div class="nav_static" id="hamburger">
-			<a onclick="toggle_menu(this)"></a>
-		</div>
-		<div class="nav_static" id="chat">
-			<a onclick="toggle_chat(this)">Chat</a>
-		</div>
+
 	</nav>
 
 	<div id="container">

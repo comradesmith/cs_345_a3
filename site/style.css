@@ -19,17 +19,30 @@ a {
 nav.toggleable {
 	position:fixed;
 	right: 0px;
-	bottom: 0px;
+	top: 0px;
 	width: 160px;
+	height: 40px;
 	background: #FFF;
 	border-style: solid;
+	z-index: 9001;
 }
 
 nav.toggleable #nav_options {
-	/* */
-	visibility: hidden;
 	display: none;
-	z-index: -9001;
+	z-index: 9001;
+	width: 220px;
+	float: right;
+	background: white;
+	border-style: solid;
+	
+}
+
+#nav_options ul {
+	margin: 0 0 16px 0;
+}
+
+#nav_options ul:last-child {
+	margin: 0 0 0 0;
 }
 
 nav .nav_static a {
@@ -51,7 +64,7 @@ nav .nav_static a {
 	position: fixed;
 	top: 0;
 	left: 0;
-	height: 48px;
+	height: 40px;
 	width: 100%;
 	background: white;
 	border-style: solid;
