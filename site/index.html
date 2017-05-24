@@ -26,17 +26,15 @@
 		</div>
 
 		<div id="nav_options">
-			<ul id="nav_assignment_control">
+			<ul id="nav_global">
 				<li class="large_button">
-					<a onclick="toggle_feedback(this)">Request Feedback</a>
+					<a onclick="toggle_section('home')">Home</a>
 				</li>
-			</ul>
-			<div></div>
-	
-			<ul id="nav_assignment_edit">
-				<li class="small_button">
-					<a onclick="undo()">Undo</a>
-					<a onclick="redo()">Redo</a>
+				<li class="large_button">
+					<a onclick="go_back()">Back</a>
+				</li>
+				<li class="large_button">
+					<a onclick="toggle_notifications(this)">Mute Notifications</a>
 				</li>
 			</ul>
 			<div></div>
@@ -54,17 +52,20 @@
 			</ul>
 			<div></div>
 	
-			<ul id="nav_global">
-				<li class="large_button">
-					<a onclick="toggle_section('home')">Home</a>
-				</li>
-				<li class="large_button">
-					<a onclick="go_back()">Back</a>
-				</li>
-				<li class="large_button">
-					<a onclick="toggle_notifications(this)">Mute Notifications</a>
+			<ul id="nav_assignment_edit">
+				<li class="small_button">
+					<a onclick="undo()">Undo</a>
+					<a onclick="redo()">Redo</a>
 				</li>
 			</ul>
+			<div></div>
+
+			<ul id="nav_assignment_control">
+				<li class="large_button">
+					<a onclick="toggle_feedback(this)">Request Feedback</a>
+				</li>
+			</ul>
+	
 		</div>
 
 	</nav>
