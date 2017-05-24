@@ -27,25 +27,43 @@
 
 		<div id="nav_options">
 			<ul id="nav_assignment_control">
-				<li><a onclick="toggle_feedback(this)">Open Feedback</a></li>
-				<li><a onclick="submit_assignment()">Submit</a></li>
+				<li class="large_button">
+					<a onclick="toggle_feedback(this)">Request Feedback</a>
+				</li>
 			</ul>
+			<div></div>
 	
 			<ul id="nav_assignment_edit">
-				<li><a onclick="undo()">Undo</a></li>
-				<li><a onclick="redo()">Redo</a></li>
+				<li class="small_button">
+					<a onclick="undo()">Undo</a>
+					<a onclick="redo()">Redo</a>
+				</li>
 			</ul>
-			
+			<div></div>
+
 			<ul id="nav_assignment">
-				<li><a onclick="toggle_section('resources')">View Resources</a></li>
-				<li><a onclick="toggle_section('assignment_body')">Edit Assignment</a></li>
-				<li><a onclick="toggle_section('feedback')">View Feedback</a></li>
+				<li class="large_button">
+					<a onclick="toggle_section('resources')">View Resources</a>
+				</li>
+				<li class="large_button">
+					<a onclick="toggle_section('assignment_body')">Edit Assignment</a>
+				</li>
+				<li class="large_button">
+					<a onclick="toggle_section('feedback')">View Feedback</a>
+				</li>
 			</ul>
+			<div></div>
 	
 			<ul id="nav_global">
-				<li><a onclick="toggle_section('home')">Home</a></li>
-				<li><a onclick="go_back()">Back</a></li>
-				<li><a onclick="toggle_notifications(this)">Mute Notifications</a></li>
+				<li class="large_button">
+					<a onclick="toggle_section('home')">Home</a>
+				</li>
+				<li class="large_button">
+					<a onclick="go_back()">Back</a>
+				</li>
+				<li class="large_button">
+					<a onclick="toggle_notifications(this)">Mute Notifications</a>
+				</li>
 			</ul>
 		</div>
 

@@ -25,7 +25,11 @@ nav.toggleable {
 	background: #FFF;
 	border-style: solid;
 	z-index: 9001;
+
+	line-height: 40px;
+	text-align: center;
 }
+
 
 nav.toggleable #nav_options {
 	display: none;
@@ -38,11 +42,24 @@ nav.toggleable #nav_options {
 }
 
 #nav_options ul {
-	margin: 0 0 16px 0;
+	/* margin: 0 0 16px 0; */
 }
 
 #nav_options ul:last-child {
-	margin: 0 0 0 0;
+	margin: 0 0 12px 0;
+}
+
+#nav_options ul + div {
+	margin: 8px 16px 8px 16px;
+	border: 1px solid #777;
+}
+
+#nav_options ul li.small_button a{
+	margin: 0 20px 0 20px;
+}
+
+#nav_options ul li.large_button {
+	width: 220px;
 }
 
 nav .nav_static a {
