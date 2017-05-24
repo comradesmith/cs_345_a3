@@ -47,10 +47,20 @@ nav .nav_static a {
 	width: 40px;
 }
 
+.banner {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 48px;
+	width: 100%;
+	background: white;
+	border-style: solid;
+}
+
 #container {
 	width: 80%;
 	max-width: 1200px;
-	margin: 4% auto 0 auto;
+	margin: 64px auto 0 auto;
 }
 
 #container .single_column {
