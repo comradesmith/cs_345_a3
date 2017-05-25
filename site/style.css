@@ -139,9 +139,15 @@ nav .nav_static a {
 	float: left;
 }
 
-img.inset {
+.inset img {
 	max-width: 300px;
 	height: auto;
+	clear: both;
+}
+
+.inset em {
+	display: block;
+	margin: 0 0 4px 0;
 }
 
 div.form_group {
