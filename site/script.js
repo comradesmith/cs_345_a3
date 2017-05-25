@@ -17,20 +17,26 @@ function toggle_menu(hamburger) {
 
 function toggle_section(incoming_section) {
 	var outgoing_section = $("section#" + active_section);
+	var outgoing_button = $("#" + active_section + "_button");
 	active_section = incoming_section;
 	var incoming_section = $("section#" + incoming_section);
+	var incoming_button = $("#" + active_section + "_button");
+
+
 
 	outgoing_section.css({
 			"visibility" : "hidden",
 			"display" : "none",
 			"z-index" : "-9001"
 	});
+	outgoing_button.removeClass("active_section");
 	
 	incoming_section.css({
 			"visibility" : "visible",
 			"display" : "block",
 			"z-index" : "1"
 	});
+	incoming_button.addClass("active_section");
 
 }
 

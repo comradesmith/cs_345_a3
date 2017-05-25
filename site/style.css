@@ -54,6 +54,10 @@ nav.toggleable #nav_options {
 	border: 1px solid #777;
 }
 
+nav.toggleable li.active_section {
+	background: #c0c0c0;
+}
+
 #nav_options ul li.small_button a{
 	margin: 0 20px 0 20px;
 }
