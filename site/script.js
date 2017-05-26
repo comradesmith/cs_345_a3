@@ -38,6 +38,10 @@ function toggle_section(incoming_section) {
 	});
 	incoming_button.addClass("active_section");
 
+	menu_open = false;
+	$(hamburger).removeClass("active_hams");
+	$("nav.toggleable #nav_options").hide();
+
 }
 
 function reply(button) {
