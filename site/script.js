@@ -41,7 +41,7 @@ function toggle_section(incoming_section) {
 }
 
 function reply(button) {
-	var reply_area = "<div class='reply_box'><textarea rows='12' cols='60' placeholder='Enter reply...'></textarea><br><button onclick='submit_comment(this)'>Submit</submit></div>";
+	var reply_area = "<div class='reply_box'><textarea rows='6' cols='60' placeholder='Enter reply...'></textarea><br><button onclick='submit_comment(this)'>Submit</submit></div>";
 	var reply_container = $(button).parent().parent();
 	
 	reply_container.children(".comment.reply_button").remove();
