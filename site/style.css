@@ -89,6 +89,7 @@ nav .nav_static a {
 }
 
 #hamburger a {
+	color: white;
 	background: blue;
 	width: 40px;
 }

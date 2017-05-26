@@ -43,6 +43,7 @@ li.small_button a:hover {
 }
 
 #hamburger a.active_hams {
+	color: #2F59A8;
 	background: #FD8E33;
 }
 
