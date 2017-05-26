@@ -81,7 +81,7 @@ nav.toggleable li.active_section {
 nav .nav_static a {
 	display: block;
 	float: right;
-	height: 40px;
+	height: 42px;
 }
 
 #chat a {
@@ -102,7 +102,7 @@ nav .nav_static a {
 	padding: 0 0 0 16px;
 	background: white;
 	line-height: 40px;
-	border-bottom: solid 4px;
+	border-bottom: 4px solid;
 }
 
 #container {

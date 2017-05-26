@@ -16,20 +16,38 @@
 
 
 .banner {
+	color: white;
 	background: #2F59A8;
-	border-color: #133E8E;
+	border-color: #FD8E33;
 }
 
 nav.toggleable {
-	border-color: #133E8E;
+	color: #A34A00;
+	/* border-color: #133E8E; */
+	border: none;
+	height: 42px;
+	border-bottom: #FD8E33 4px solid;
+
 }
 
 nav.toggleable #nav_options {
-	background: #FFBD87;
+	background: white;
+}
+
+li.small_button a:hover {
+	background: #FFA458;
+}
+
+#hamburger a {
+	background: #2F59A8;
+}
+
+#hamburger a.active_hams {
+	background: #2F59A8;
 }
 
 #nav_options {
-	border-color: #A34A00;
+	border-color:white;
 }
 
 #nav_options ul + div {
@@ -42,4 +60,12 @@ nav.toggleable #nav_options li.active_section {
 
 nav.toggleable li.large_button:hover {
 	background: #FFA458;
+}
+
+#container {
+	background: white;
+}
+
+body {
+	background: #7998D2;
 }
