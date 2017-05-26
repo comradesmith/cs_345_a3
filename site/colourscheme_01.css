@@ -1,0 +1,45 @@
+/* *** Primary colour: */
+
+/*    base    = #2F59A8 */
+/*    tint  1 = #7998D2 */
+/*    tint  2 = #4B72B8 */
+/*    shade 1 = #0A2D6C */
+/*    shade 2 = #133E8E */
+
+/* *** Complement colour: */
+
+/*    base    = #FD8E33 */
+/*    tint  1 = #FFBD87 */
+/*    tint  2 = #FFA458 */
+/*    shade 1 = #A34A00 */
+/*    shade 2 = #D66508 */
+
+
+.banner {
+	background: #2F59A8;
+	border-color: #133E8E;
+}
+
+nav.toggleable {
+	border-color: #133E8E;
+}
+
+nav.toggleable #nav_options {
+	background: #FFBD87;
+}
+
+#nav_options {
+	border-color: #A34A00;
+}
+
+#nav_options ul + div {
+	border-color: #A34A00;
+}
+
+nav.toggleable #nav_options li.active_section {
+	background: #FD8E33;
+}
+
+nav.toggleable li.large_button:hover {
+	background: #FFA458;
+}
