@@ -5,12 +5,12 @@ function toggle_menu(hamburger) {
 	/* TODO change colours */
 	if(menu_open){
 		menu_open = false;
-		hamburger.style.background = "#46C";
+		$(hamburger).removeClass("active_hams");
 		$("nav.toggleable #nav_options").hide();
 	}
 	else {
 		menu_open = true;
-		hamburger.style.background = "#C64";
+		$(hamburger).addClass("active_hams");
 		$("nav.toggleable #nav_options").show();
 	}
 } 
