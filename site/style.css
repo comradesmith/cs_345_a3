@@ -247,3 +247,8 @@ ul.bulleted_list {
 	margin: 0 0 0 24px;
 	list-style-type: square;
 }
+
+.feedback_text {
+	font-size: small;
+	font-style: italic;
+}

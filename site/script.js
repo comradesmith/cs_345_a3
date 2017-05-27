@@ -1,5 +1,33 @@
 var menu_open = false;
 var active_section = "assignment_body";
+var feedback_status = false;
+
+function submit_assignment(button) {
+	var button = $(button);
+	var sub_status = button.attr("value");
+	var info_box = button.siblings("span#submission_feedback");
+
+	alert("Your assignment has been " + sub_status + "ted at hh:mm - 0th Septubary") 
+	info_box.text("Last submitted at hh:mm - 0th Septubary");
+	button.attr("value", "Resubmit");
+
+}
+
+function toggle_feedback(button) {
+	menu_open = false;
+	$(hamburger).removeClass("active_hams");
+	$("nav.toggleable #nav_options").hide();
+	if(feedback_status){
+		feedback_status = false;
+		$(button).text("Request Feedback");
+		alert("Your feedback request is now closed");
+	}	
+	else {
+		feedback_status = true;
+		$(button).text("Withdraw Request");
+		alert("Your assignment is now open for peer feedback");
+	}
+}
 
 function toggle_menu(hamburger) {
 	/* TODO change colours */
