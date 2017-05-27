@@ -20,17 +20,12 @@ Task two, Implementation Tasks:
 	X create blank home page
 	X create resources page
 	- implement back functionality
-	~ style navigation menu
-	- implement naviagtion menu colour indicators
-	- rename 'open feedback'
-	- diverge and work on task one
+	X style navigation menu
+	X implement naviagtion menu colour indicators
+	X rename 'open feedback'
+	~ diverge and work on task one
 	- regroup and finish prototype functionality.
 
 ### Ideas
 
-Make the title of each section behave much like a status bar, bg color,
-full width, fixed position.
-
-What makes the most sense to me is to have a seperate style sheet for the colours.
-That way I can safely do a :s/[x]/[y]/g to generate many colourschemes and test
-all of them out.
+I've tried nothing and I'm all out of ideas!
