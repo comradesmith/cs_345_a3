@@ -65,13 +65,43 @@ nav.toggleable li.large_button:hover {
 }
 
 #chat a {
-	border-color: #FD8E33;
+	border-color: #2F59A8;
 	background: #2F59A8;
 	color: white;
 }
 
+#chat a.active_chat_button {
+	border-color: #FD8E33;
+	background: #FD8E33;
+}
+
+#chat_window {
+	border-color: #FD8E33;
+}
+
+#chat_header {
+	background: #FFBD87;
+	border-color: #FD8E33;
+}
+
 #container {
 	background: white;
+}
+
+.peer_message {
+	border-color: #D66508;
+}
+
+.peer_message:before {
+	color: #D66508;
+}
+
+.self_message {
+	border-color: #133E8E;
+}
+
+.self_message:before {
+	color: #133E8E;
 }
 
 body {
