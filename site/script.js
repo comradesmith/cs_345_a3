@@ -15,14 +15,26 @@ function toggle_menu(hamburger) {
 	}
 } 
 
-function toggle_section(incoming_section) {
+function toggle_section(incoming_section_name) {
 	var outgoing_section = $("section#" + active_section);
 	var outgoing_button = $("#" + active_section + "_button");
-	active_section = incoming_section;
-	var incoming_section = $("section#" + incoming_section);
+	active_section = incoming_section_name;
+	var incoming_section = $("section#" + incoming_section_name);
 	var incoming_button = $("#" + active_section + "_button");
 
-
+	// filthy, pig-disguting, code lies here
+	if(incoming_section_name === "assignment_body"){
+		$("#nav_assignment_edit, #nav_assignment_edit + div").show();
+		$("#nav_assignment_control, #nav_assignment_control + div").show();
+		$("#nav_assignment + div").show();
+	}
+	// please make it stop, I feel sick
+	else {
+		$("#nav_assignment_edit, #nav_assignment_edit + div").hide();
+		$("#nav_assignment_control, #nav_assignment_control + div").hide();
+		$("#nav_assignment + div").hide();
+	}
+	// I am not proud of what I have done today
 
 	outgoing_section.css({
 			"visibility" : "hidden",
