@@ -5,6 +5,7 @@
 /*    tint  2 = #4B72B8 */
 /*    shade 1 = #0A2D6C */
 /*    shade 2 = #133E8E */
+/*    shade 2 = #0A214D */
 
 /* *** Complement colour: */
 
@@ -13,6 +14,7 @@
 /*    tint  2 = #FFA458 */
 /*    shade 1 = #A34A00 */
 /*    shade 2 = #D66508 */
+/*    shade 3 = #4D2503 */
 
 
 .banner {
@@ -80,11 +82,13 @@ nav.toggleable li.large_button:hover {
 }
 
 #chat_header {
+	color: #4D2503;
 	background: #FFBD87;
 	border-color: #FD8E33;
 }
 
 #container {
+	color: #0A214D;
 	background: white;
 }
 

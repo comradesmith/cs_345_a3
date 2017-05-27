@@ -274,6 +274,7 @@ ul.bulleted_list {
 	padding-left: 12px;
 	background: blue;
 	font-weight: bold;
+	font-family: serif;
 	border-bottom-style: solid;
 	border-bottom-width: 4px;
 }
