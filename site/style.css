@@ -134,8 +134,9 @@ nav .nav_static a {
 
 #container {
 	width: 80%;
+	min-height: 80vh;
 	max-width: 1200px;
-	margin: 64px auto 0 auto;
+	margin: 64px auto 5vh auto;
 	padding: 16px
 }
 
