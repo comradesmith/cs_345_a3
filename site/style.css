@@ -20,12 +20,11 @@ nav.toggleable {
 	position:fixed;
 	right: 0px;
 	top: 0px;
-	width: 160px;
+	width: 40px;
 	height: 40px;
 	background: #FFF;
 	border-style: solid;
 	z-index: 9001;
-
 	line-height: 40px;
 	text-align: center;
 }
@@ -85,7 +84,17 @@ nav .nav_static a {
 }
 
 #chat a {
+	display: block;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	height: 42px;
 	width: 120px;
+	background: white;
+	border-style: solid;
+	border-width: 4px;
+	text-align: center;
+	line-height: 40px;
 }
 
 #hamburger a {
