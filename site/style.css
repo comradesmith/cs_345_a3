@@ -325,3 +325,23 @@ ul.bulleted_list {
 	content: "me";
 	font-weight: bold;
 }
+
+.resource_anchor {
+	display: block;
+	height: 80px;
+	margin: -80px 0 0 0;
+	visibility: hidden;
+}
+
+#resources a {
+	margin: 8px 0 0 0;
+	text-decoration: underline;
+}
+
+#resources li {
+	margin: 8px 0 0 0;
+}
+
+#resources h4 {
+	margin: 36px 0 0 0;
+}
