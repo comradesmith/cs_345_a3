@@ -59,18 +59,10 @@ function toggle_feedback(button) {
 	}
 }
 
-function toggle_menu(hamburger) {
-	/* TODO change colours */
-	if(menu_open){
-		menu_open = false;
-		$(hamburger).removeClass("active_hams");
-		$("nav.toggleable #nav_options").hide();
-	}
-	else {
-		menu_open = true;
-		$(hamburger).addClass("active_hams");
-		$("nav.toggleable #nav_options").show();
-	}
+function toggle_menu() {
+	$("#hamburger a").toggleClass("active_hams");
+	$("nav.toggleable #nav_options").toggle();
+	menu_open = !menu_open;
 } 
 
 function toggle_notifications(button) {
