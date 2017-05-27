@@ -30,17 +30,10 @@ function submit_assignment(button) {
 
 }
 
-function toggle_chat(button) {
-	if(chat_open){
-		chat_open = false;
-		$("#chat_window").hide();
-		$(button).removeClass("active_chat_button");
-	}
-	else {
-		chat_open = true;
-		$("#chat_window").show();
-		$(button).addClass("active_chat_button");
-	}
+function toggle_chat() {
+	chat_open = !chat_open;
+	$("#chat_window").toggle();
+	$("#chat a").toggleClass("active_chat_button");
 }
 
 function toggle_feedback(button) {
