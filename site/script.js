@@ -1,5 +1,6 @@
 var menu_open = false;
 var chat_open = false;
+var notifications_muted = false;
 var active_section = "assignment_body";
 var previous_section = "home";
 var feedback_status = false;
@@ -57,6 +58,17 @@ function toggle_menu(hamburger) {
 		$("nav.toggleable #nav_options").show();
 	}
 } 
+
+function toggle_notifications(button) {
+	if(notifications_muted) {
+		$(button).text("Mute Notifications");
+	}
+	else {
+		$(button).text("Unmute Notifications");
+	}
+
+	notifications_muted = !notifications_muted;
+}
 
 function go_back() {
 	toggle_section(previous_section);
