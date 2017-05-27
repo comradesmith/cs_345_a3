@@ -69,6 +69,7 @@ nav.toggleable #nav_options {
 
 nav.toggleable li.active_section {
 	background: #c0c0c0;
+	font-weight: bold;
 }
 
 #nav_options ul li.small_button a{

@@ -48,7 +48,7 @@ li.small_button a:hover {
 }
 
 #nav_options {
-	border-color:white;
+	border-color: #FD8E33;
 }
 
 #nav_options ul + div {
@@ -57,10 +57,17 @@ li.small_button a:hover {
 
 nav.toggleable #nav_options li.active_section {
 	background: #FD8E33;
+	color: white;
 }
 
 nav.toggleable li.large_button:hover {
 	background: #FFA458;
+}
+
+#chat a {
+	border-color: #FD8E33;
+	background: #2F59A8;
+	color: white;
 }
 
 #container {
