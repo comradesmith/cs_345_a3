@@ -1,6 +1,7 @@
 var menu_open = false;
 var chat_open = false;
 var active_section = "assignment_body";
+var previous_section = "home";
 var feedback_status = false;
 
 function submit_assignment(button) {
@@ -57,7 +58,12 @@ function toggle_menu(hamburger) {
 	}
 } 
 
+function go_back() {
+	toggle_section(previous_section);
+}
+
 function toggle_section(incoming_section_name) {
+	previous_section = active_section;
 	var outgoing_section = $("section#" + active_section);
 	var outgoing_button = $("#" + active_section + "_button");
 	active_section = incoming_section_name;
