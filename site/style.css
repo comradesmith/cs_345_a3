@@ -41,6 +41,7 @@ nav.toggleable #nav_options {
 	left: 0;
 	width: 220px;
 	float: right;
+	padding: 12px 0 12px 0;
 	background: white;
 	border-bottom-style: solid;
 	border-bottom-width: 4px;
@@ -63,9 +64,6 @@ nav.toggleable #nav_options {
 	/* margin: 0 0 16px 0; */
 }
 
-#nav_options ul:last-child {
-	margin: 0 0 12px 0}
-
 #nav_options ul + div {
 	margin: 8px 16px 8px 16px;
 	border: 1px solid #777;
@@ -81,7 +79,8 @@ nav.toggleable li.active_section {
 }
 
 #nav_options ul li.large_button {
-	width: 220px;
+	width: 188px;
+	margin: 0 16px 0 16px;
 }
 
 nav .nav_static a {
