@@ -102,23 +102,13 @@ function toggle_section(incoming_section_name) {
 	}
 	// I am not proud of what I have done today
 
-	outgoing_section.css({
-			"visibility" : "hidden",
-			"display" : "none",
-			"z-index" : "-9001"
-	});
+	outgoing_section.hide();
 	outgoing_button.removeClass("active_section");
 	
-	incoming_section.css({
-			"visibility" : "visible",
-			"display" : "block",
-			"z-index" : "1"
-	});
+	incoming_section.show();
 	incoming_button.addClass("active_section");
 
-	menu_open = false;
-	$(hamburger).removeClass("active_hams");
-	$("nav.toggleable #nav_options").hide();
+	toggle_menu();
 
 }
 

@@ -197,9 +197,7 @@ textarea {
 }
 
 .hidden_section {
-	visibility: hidden;
 	display: none;
-	z-index: -9001;
 }	
 
 div.thread {
