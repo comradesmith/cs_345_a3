@@ -27,6 +27,9 @@ nav.toggleable {
 	z-index: 9001;
 	line-height: 40px;
 	text-align: center;
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	user-select: none; 			/* why cant these dicks just play nice? */
 }
 
 
@@ -48,6 +51,7 @@ nav.toggleable #nav_options {
 #nav_options a {
 	display: block;
 	height: 100%;
+	cursor:pointer;
 }
 
 #nav_options li.small_button a {
@@ -98,12 +102,18 @@ nav .nav_static a {
 	border-width: 4px;
 	text-align: center;
 	line-height: 40px;
+	font-weight: bold;
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	user-select: none; 			/* why cant these dicks just play nice? */
+	cursor:pointer;
 }
 
 #hamburger a {
 	color: white;
 	background: blue;
 	width: 40px;
+	cursor:pointer;
 }
 
 #hamburger a.active_hams {
