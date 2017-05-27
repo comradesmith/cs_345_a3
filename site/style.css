@@ -301,7 +301,7 @@ ul.bulleted_list {
 }
 
 .chat_message {
-	margin: 12px auto auto auto;
+	margin: 12px auto 8px auto;
 	padding: 6px;
 	border-style: solid;
 	border-width: 2px;

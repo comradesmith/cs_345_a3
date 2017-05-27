@@ -5,6 +5,20 @@ var active_section = "assignment_body";
 var previous_section = "home";
 var feedback_status = false;
 
+function send_msg(button) {
+	var text_input_box = $(button).siblings("#chat_input");
+	var message = text_input_box.val();
+	var scroll_pane = $("#chat_scroll_pane");
+	text_input_box.val("");
+
+	var message_element = "<div class='self_message chat_message'><p>" +
+		message + "</p></div>";
+
+	scroll_pane.append(message_element);
+	scroll_pane.scrollTop(scroll_pane[0].scrollHeight)
+	
+}
+
 function submit_assignment(button) {
 	var button = $(button);
 	var sub_status = button.attr("value");
