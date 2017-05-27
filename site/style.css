@@ -180,6 +180,11 @@ div.form_group select option {
 	width: 240px;
 }
 
+textarea {
+	max-width: 720px;
+	width: 100%;
+}
+
 .hidden_section {
 	visibility: hidden;
 	display: none;
