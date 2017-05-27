@@ -191,8 +191,11 @@
 		<h4>Interdum mattis</h4>
 		<span class="resource_anchor" id="res_2"></span>
 		<div class="inset left_inset">
-			<img src="images/resources_image-2.jpg"/>
-			<em>The Mona Lisa</em>
+			<p><i>Supplementary audio module</i></p>
+			<audio controls>
+				<source src="null.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio> 
 		</div>
 
 		<p>Maecenas vel sapien vitae mauris porta consequat. Etiam mattis dui 
@@ -222,11 +225,8 @@
 		<h4>Convallis vitae</h4>
 		<span class="resource_anchor" id="res_3"></span>
 		<div class="inset">
-			<p><i>Supplementary audio module</i></p>
-			<audio controls>
-				<source src="null.mp3" type="audio/mpeg">
-			 	Your browser does not support the audio element.
-			</audio> 
+			<img src="images/resources_image-2.jpg"/>
+			<em>The Mona Lisa</em>
 		</div>
 
 		<p>Te justo fierent prodesset quo, laboramus vituperatoribus id quo. 
@@ -355,6 +355,7 @@
 
 		<textarea name="answer_4" rows="12" 
 		placeholder="Please type your answer here"></textarea>
+		<br>
 		<input type="submit" value="Submit" onclick="submit_assignment(this)">
 		<span class="feedback_text" id="submission_feedback">
 		Assignment has not yet been submitted</span>
