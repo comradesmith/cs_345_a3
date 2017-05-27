@@ -256,6 +256,7 @@ ul.bulleted_list {
 
 #chat_window {
 	position: fixed;
+	display: none;
 	bottom: 50px;
 	right: 0;
 	height: 350px;

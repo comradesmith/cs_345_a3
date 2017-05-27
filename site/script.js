@@ -1,4 +1,5 @@
 var menu_open = false;
+var chat_open = false;
 var active_section = "assignment_body";
 var feedback_status = false;
 
@@ -11,6 +12,19 @@ function submit_assignment(button) {
 	info_box.text("Last submitted at hh:mm - 0th Septubary");
 	button.attr("value", "Resubmit");
 
+}
+
+function toggle_chat(button) {
+	if(chat_open){
+		chat_open = false;
+		$("#chat_window").hide();
+		$(button).removeClass("active_chat_button");
+	}
+	else {
+		chat_open = true;
+		$("#chat_window").show();
+		$(button).addClass("active_chat_button");
+	}
 }
 
 function toggle_feedback(button) {
