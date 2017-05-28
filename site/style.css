@@ -266,6 +266,8 @@ nav .nav_static a {
 }
 
 .inset em {
+	font-family: "Georgia";
+	font-size: 11pt;
 	display: block;
 	margin: 0 0 4px 0;
 }
