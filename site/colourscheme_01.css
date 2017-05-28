@@ -50,7 +50,7 @@ li.small_button a:hover {
 }
 
 #nav_options {
-	border-color: #FD8E33;
+	border-color: #FD8E33 #FD8E33 #FD8E33 white;
 }
 
 #nav_options ul + div {
