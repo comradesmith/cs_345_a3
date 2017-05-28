@@ -106,7 +106,7 @@ function toggle_section(incoming_section_name) {
 }
 
 function reply(button) {
-	var reply_area = "<div class='reply_box'><textarea rows='6' cols='60' placeholder='Enter reply...'></textarea><br><button onclick='submit_comment(this)'>Submit</submit></div>";
+	var reply_area = "<div class='reply_box'><textarea rows='6' cols='60' placeholder='Enter reply...' autofocus></textarea><br><div class='comment reply_button submit_button'><a onclick='submit_comment(this)'>Submit</a></div><div class='comment reply_button cancel_button'><a onclick='cancel_comment(this)'>Cancel</a></div></div>";
 	var reply_container = $(button).parent().parent();
 	
 	reply_container.children(".comment.reply_button").remove();
@@ -114,13 +114,14 @@ function reply(button) {
 }
 
 function submit_comment(button){
-	var parent_element = $(button).parent();
+	button = $(button).parent();
+	var parent_element = button.parent();
 	var reply_container = parent_element.parent();
-	var text_area = $(button).siblings('textarea');
+	var text_area = button.siblings('textarea');
 	var input_text = text_area.val();
 	// parent_element.empty();
 	
-	var new_comment = "<div class='comment reply'><h4>Me</h4><p>"
+	var new_comment = "<div class='comment reply self_comment'><p>"
 					 +  input_text + "</p></div>";
 
 	var reply_button = "<div class='comment reply_button'><a onclick='reply(this)'>Reply</a></div>";
@@ -131,4 +132,13 @@ function submit_comment(button){
 	reply_container.append(new_comment, reply_button);
 
 	console.log(input_text);
+}
+
+function cancel_comment (button) {
+	var text_area = $(button).parent().parent();
+	var reply_container = text_area.parent();
+	var reply_button = "<div class='comment reply_button'><a onclick='reply(this)'>Reply</a></div>";
+
+	text_area.remove();
+	reply_container.append(reply_button);
 }

@@ -131,3 +131,17 @@ body {
 .comment.other_comment:before {
 	color: #D66508;
 }
+
+.reply_button {
+	background: #2F59A8;
+	color: white;
+}
+
+.comment.submit_button {
+	background: #FD8E33;
+}
+
+#container .reply_button a {
+	text-decoration: none;
+	font-weight: bold;
+}
