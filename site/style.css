@@ -129,6 +129,7 @@ nav .nav_static a {
 	background: white;
 	line-height: 40px;
 	border-bottom: 4px solid;
+	z-index: 9000;
 }
 
 #container {
@@ -342,4 +343,8 @@ ul.bulleted_list {
 
 #resources h4 {
 	margin: 36px 0 0 0;
+}
+
+#resources h4:first-of-type {
+	margin: 0px 0 0 0;
 }
