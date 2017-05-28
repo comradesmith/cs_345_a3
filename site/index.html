@@ -38,11 +38,11 @@
 			<div></div>
 
 			<ul id="nav_assignment">
-				<li class="large_button" id="resources_button">
-					<a onclick="toggle_section('resources')">View Resources</a>
-				</li>
 				<li class="large_button active_section" id="assignment_body_button">
 					<a onclick="toggle_section('assignment_body')">Edit Assignment</a>
+				</li>
+				<li class="large_button" id="resources_button">
+					<a onclick="toggle_section('resources')">View Resources</a>
 				</li>
 				<li class="large_button" id="feedback_button">
 					<a onclick="toggle_section('feedback')">View Feedback</a>
@@ -356,7 +356,7 @@
 		<textarea name="answer_4" rows="12" 
 		placeholder="Please type your answer here"></textarea>
 		<br>
-		<input type="submit" value="Submit" onclick="submit_assignment(this)">
+		<input id="submit_assignment" type="submit" value="Submit" onclick="submit_assignment(this)">
 		<span class="feedback_text" id="submission_feedback">
 		Assignment has not yet been submitted</span>
 

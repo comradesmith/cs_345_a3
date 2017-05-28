@@ -137,8 +137,9 @@ body {
 	color: white;
 }
 
-.comment.submit_button {
+.comment.submit_button , #submit_assignment {
 	background: #FD8E33;
+	color: white;
 }
 
 #container .reply_button a {

@@ -64,6 +64,10 @@ nav.toggleable #nav_options {
 	cursor:pointer;
 }
 
+#nav_options li , #nav_options li a {
+	border-radius: 4px;
+}
+
 #nav_options li.small_button a {
 	display: inline-block;
 	width: 80px;
@@ -132,6 +136,7 @@ nav .nav_static a {
 	background: white;
 	border-style: solid;
 	border-width: 4px;
+	border-radius: 4px;
 	font-family: "Helvetica", sans-serif;
 	font-size: small;
 }
@@ -306,6 +311,7 @@ div.thread {
 	border-style: solid;
 	border-width: 1px;
 	border-bottom-width: 4px;
+	border-radius: 4px;
 	float: right;
 	clear: both;
 }
@@ -373,6 +379,17 @@ ul.bulleted_list {
 .feedback_text {
 	font-size: small;
 	font-style: italic;
+}
+
+#submit_assignment {
+	min-width: 74px;
+	min-height: 26px;
+	margin-top: 4px;
+	margin-right: 4px;
+	border: none;
+	border-radius: 4px;
+	font-family: "Helvetica", sans-serif;
+	font-weight: bold;
 }
 
 .resource_anchor {
