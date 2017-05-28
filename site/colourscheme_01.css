@@ -94,6 +94,7 @@ nav.toggleable li.large_button:hover {
 
 .peer_message {
 	border-color: #D66508;
+	color: #4D2503;
 }
 
 .peer_message:before {
@@ -102,6 +103,7 @@ nav.toggleable li.large_button:hover {
 
 .self_message {
 	border-color: #133E8E;
+	color: #0A214D;
 }
 
 .self_message:before {
@@ -110,4 +112,22 @@ nav.toggleable li.large_button:hover {
 
 body {
 	background: #7998D2;
+}
+
+.comment.self_comment {
+	border-color: #133E8E;
+	color: #0A214D;
+}
+
+.comment.other_comment {
+	border-color: #D66508;
+	color: #4D2503;
+}
+
+.comment.self_comment:before {
+	color: #133E8E;
+}
+
+.comment.other_comment:before {
+	color: #D66508;
 }
