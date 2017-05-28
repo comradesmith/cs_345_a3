@@ -14,6 +14,16 @@ ol, ul {
 a {
 	outline: none;
 	text-decoration: none;
+	font-family: "Helvetica", times;
+}
+
+p {
+	font-family: "georgia", serif;
+	font-size: 11pt;
+}
+
+h2, h4 {
+	font-family: "Helvetica", times;
 }
 
 nav.toggleable {
@@ -58,10 +68,7 @@ nav.toggleable #nav_options {
 #nav_options li.small_button a {
 	display: inline-block;
 	width: 80px;
-}
-
-#nav_options ul {
-	/* margin: 0 0 16px 0; */
+	margin: 0 10px 0 10px;
 }
 
 #nav_options ul + div {
@@ -74,10 +81,6 @@ nav.toggleable li.active_section {
 	font-weight: bold;
 }
 
-#nav_options ul li.small_button a{
-	margin: 0 10px 0 10px;
-}
-
 #nav_options ul li.large_button {
 	width: 188px;
 	margin: 0 16px 0 16px;
@@ -87,6 +90,17 @@ nav .nav_static a {
 	display: block;
 	float: right;
 	height: 42px;
+}
+
+#hamburger a {
+	color: white;
+	background: blue;
+	width: 40px;
+	cursor:pointer;
+}
+
+#hamburger a.active_hams {
+	background: orange;
 }
 
 #chat a {
@@ -108,15 +122,80 @@ nav .nav_static a {
 	cursor:pointer;
 }
 
-#hamburger a {
-	color: white;
-	background: blue;
-	width: 40px;
-	cursor:pointer;
+#chat_window {
+	position: fixed;
+	display: none;
+	bottom: 50px;
+	right: 0;
+	height: 350px;
+	width: 280px;
+	background: white;
+	border-style: solid;
+	border-width: 4px;
+	font-family: "Helvetica", sans-serif;
+	font-size: small;
 }
 
-#hamburger a.active_hams {
-	background: orange;
+#chat_header {
+	height: 28px;
+	line-height: 28px;
+	padding-left: 12px;
+	background: blue;
+	font-weight: bold;
+	border-bottom-style: solid;
+	border-bottom-width: 4px;
+}
+
+#chat_header p {
+	font-family: "Helvetica", sans-serif;
+}
+
+#chat_footer {
+	position: absolute;
+	bottom: 0;
+	display: flex;
+	background: white;
+}
+
+#chat_footer #chat_input {
+	width: 221px;
+}
+
+#chat_footer #chat_send {
+	width: 17%;
+}
+
+#chat_scroll_pane {
+	height: 293px;
+	margin: 0 0 0 12px;
+	padding: 0 12px 0 0;
+	overflow-y: scroll;
+}
+
+.chat_message {
+	margin: 12px auto 8px auto;
+	padding: 6px;
+	border-style: solid;
+	border-width: 2px;
+	border-bottom-width: 4px;
+}
+
+.peer_message {
+	margin-right: 36px;
+}
+
+.peer_message:before {
+	content: "name";
+	font-weight: bold;
+}
+
+.self_message {
+	margin-left: 36px;
+}
+
+.self_message:before {
+	content: "me";
+	font-weight: bold;
 }
 
 .banner {
@@ -144,12 +223,22 @@ nav .nav_static a {
 	width: 100%;	
 }
 
-#container .single_column h2 {
-	margin: 0 0 6px 0;
+#container .single_column h4 {
+	/* margin: 0 0 6px 0; */
+	margin: 36px 0 8px 0;
+}
+
+#container h4:first-of-type {
+	margin-top: 0px;
 }
 
 #container .single_column p {
-	margin: 0 0 14px 0;
+	margin: 0 64px 14px 10px;
+}
+
+#container .single_column a {
+	margin: 8px 0 0 0;
+	text-decoration: underline;
 }
 
 #container .single_column fieldset {
@@ -252,79 +341,6 @@ ul.bulleted_list {
 	font-style: italic;
 }
 
-#chat_window {
-	position: fixed;
-	display: none;
-	bottom: 50px;
-	right: 0;
-	height: 350px;
-	width: 280px;
-	background: white;
-	border-style: solid;
-	border-width: 4px;
-	font-family: sans-serif;
-	font-size: small;
-}
-
-#chat_header {
-	height: 28px;
-	line-height: 28px;
-	padding-left: 12px;
-	background: blue;
-	font-weight: bold;
-	font-family: serif;
-	border-bottom-style: solid;
-	border-bottom-width: 4px;
-}
-
-#chat_footer {
-	position: absolute;
-	bottom: 0;
-	display: flex;
-	background: white;
-}
-
-#chat_footer #chat_input {
-	width: 221px;
-}
-
-#chat_footer #chat_send {
-	width: 17%;
-}
-
-#chat_scroll_pane {
-	height: 293px;
-	margin: 0 0 0 12px;
-	padding: 0 12px 0 0;
-	overflow-y: scroll;
-}
-
-.chat_message {
-	margin: 12px auto 8px auto;
-	padding: 6px;
-	border-style: solid;
-	border-width: 2px;
-	border-bottom-width: 4px;
-}
-
-.peer_message {
-	margin-right: 36px;
-}
-
-.peer_message:before {
-	content: "name";
-	font-weight: bold;
-}
-
-.self_message {
-	margin-left: 36px;
-}
-
-.self_message:before {
-	content: "me";
-	font-weight: bold;
-}
-
 .resource_anchor {
 	display: block;
 	height: 80px;
@@ -332,19 +348,6 @@ ul.bulleted_list {
 	visibility: hidden;
 }
 
-#resources a {
-	margin: 8px 0 0 0;
-	text-decoration: underline;
-}
-
 #resources li {
 	margin: 8px 0 0 0;
-}
-
-#resources h4 {
-	margin: 36px 0 0 0;
-}
-
-#resources h4:first-of-type {
-	margin: 0px 0 0 0;
 }
